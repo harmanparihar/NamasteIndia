@@ -1,6 +1,6 @@
 # NamasteIndia
 Website for a magazine using simple HTML/CSS
-Contains 5 different HTML documents for:
+contains 5 different HTML documents for:
 <ul>
 <li> <a  href="http://mylinux.langara.bc.ca/~hkaur023/magazine/index.html">Landing Page </a>(index.html)</li>
 <li> <a href="http://mylinux.langara.bc.ca/~hkaur023/magazine/story.html">Article Page </a>(story.html)</li>
