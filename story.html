@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=s, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <title>Namaste India</title>
+  <!-- Dropdown menu Source: w3schools.com -->
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+  function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+          } else {
+              a[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+</head>
+
+<body class="cf">
+  <!--  ***********************HEADER**************************-->
+  <header class="cf">
+    <nav class="cf">
+      <ul class="cf">
+
+        <li class="menu_icon"><div class="dropdown"><button onclick="myFunction()" class="dropbutton"><i class="fas fa-bars"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+        <a href="story.html">Travel</a>
+        <a href="#">Heritage</a>
+        <a href="#">Food</a>
+        <a href="404.html">Culture</a>
+        <a href="contact.html">Contact</a>
+      </div></div></li>
+        <li class="logomenu"><a href="#"><img class="logo" src="images/logo2small.png" alt="logo image"></a></li>
+        <li class="menu"><a href="index.html">HOME</a></li>
+        <li class="menu"><a href="story.html">TRAVEL</a></li>
+        <li class="menu"><a href="#">HERITAGE</a></li>
+        <li class="menu"><a href="#">FOOD</a></li>
+        <li class="menu"><a href="#">CULTURE</a></li>
+        <li class="menu"><a href="contact.html">CONTACT</a></li>
+        <li class="menu"><form id="searching">
+	        <input type="search">
+          </form>
+        </li>
+        <li class="search_icon"><a href=""><i class="fas fa-search"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="bg-story-image cf">
+    <div class="highlight headline">
+      <h1>The Lake House</h1>
+      <div>
+        <i>Come explore the Northern India, and get a chance to experience living in the best lake house of the world. </i>
+        <div class="small">28th January 2018, by <span class="yellow">SARIKA BHATTACHARYA</span></div>
+      </div>
+      <button onclick="location.href = 'index.html';" class="read" type="submit" name="Read More" value="Home">READ MORE</button>
+    </div>
+  </div>
+<!--**********************SECTION***************************-->
+
+<div class="wrapper cf">
+<div class="col12 section cf floatleft">
+  <div class="col6 cf article floatleft">
+    <h1 class="story titletext">The Great Himalayan Range</h1>
+
+    <div class="date">17<span class="super">th</span> March 2018, <i>Jammu & Kashmir</i> | Kabir Alluwalia</div>
+
+    <p class="qoute"><sup class="padding"><i class="qoutemargin fas fa-quote-left"></i></sup><i>The Himalayas, or Himalaya, form a mountain range in Asia separating the plains of the Indian subcontinent from the Tibetan Plateau.</i><sup class="padding"><i class="qoutemargin fas fa-quote-right"></i></sup></p>
+
+<p>The Himalayan range has many of the Earth's highest peaks, including the highest, Mount Everest. The Himalayas include over fifty mountains exceeding 7,200 metres in elevation, including all of the fourteen 8,000 metre peaks. By contrast, the highest peak outside Asia is 6,961 metres tall.</p>
+<h3 class="margintop">Geography</h3>
+<p>  Lifted by the subduction of the Indian tectonic plate under the Eurasian Plate, the Himalayan mountain range runs, west-northwest to east-southeast, in an arc 2,400 kilometres (1,500 mi) long. Its western anchor, Nanga Parbat, lies just south of the northernmost bend of Indus river. Its eastern anchor, Namcha Barwa, is just west of the great bend of the Yarlung Tsangpo River (upper stream of the Brahmaputra River). The Himalayan range is bordered on the northwest by the Karakoram and Hindu Kush ranges, to the north, the chain is separated from the Tibetan Plateau by a 50–60 kilometres wide tectonic valley called the Indus-Tsangpo Suture. Towards the south the arc of the Himalaya is ringed by the very low Indo-Gangetic Plain. The range varies in width from 350 kilometres (220 mi) in the west (Kashmir) to 150 kilometres (93 mi) in the east (Arunachal Pradesh). </p>
+
+<img class="section" src="images/mountains.jpg" alt="mountains picture">
+  </div>
+  <div class="col6 article floatleft cf">
+    <img class="section" src="images/boat2.jpg" alt="man rowing boat picture">
+
+    <h3 class="margintop">Culture</h3>
+    <p>The Himalayan population belongs to four distinct cultural groups, who throughout history have systematically penetrated the isolated indigenous Himalayan population. Those migrating cultures – Hindu (Indian), Buddhist (Tibetan), Islamic (Afghanistan–Iran) and Animist (Burmese and south-eastern Asian) – without any doubt have created here their own individual and unique place. Their current arrangement, though with a few exceptions, is linked to specific geographical regions, and the relative altitude at which they occur.</p>
+
+<p>There are many cultural aspects of the Himalayas. For the Hindus, the Himalayas are personified as Himavath, the father of the goddess Parvati. The Himalayas is also considered to be the father of the river Ganges. The Mountain Kailash is a sacred peak to the Hindus and is where the Lord Shiva is believed to live. Two of the most sacred places of pilgrimage for the Hindus is the temple complex in Pashupatinath and Muktinath, also known as Saligrama because of the presence of the sacred black rocks called saligrams.</p>
+<h3 class="margintop">Lakes</h3>
+<p>The Himalayan region is dotted with hundreds of lakes. Most lakes are found at altitudes of less than 5,000 m, with the size of the lakes diminishing with altitude. Tilicho Lake in Nepal in the Annapurna massif is one of the highest lakes in the world. Pangong Tso, which is spread across the border between India and China, and Yamdrok Tso, located in central Tibet, are amongst the largest with surface areas of 700 km², and 638 km², respectively. Other notable lakes include She-Phoksundo Lake in the Shey Phoksundo National Park of Nepal, Gurudongmar Lake, in North Sikkim, Gokyo Lakes in Solukhumbu district of Nepal and Lake Tsongmo, near the Indo-China border in Sikkim.</p>
+
+  </div>
+
+</div>
+<!-- ************* quick links *************************** -->
+<div class="col12 section floatleft cf">
+  <h2><span>Quick Links</span></h2>
+  <div class=" marginbottom col12 padding cf">
+    <div class="col6 section full floatleft cf">
+      <div class="col6 half padding  floatleft"><img src="images/sand.jpg" alt="desert image" >
+        <div class="smallheading">Thar Desert, Rajasthan</div>
+        <div class="date">10<span class="super">th</span> March 2018, <i>Jaisalmer</i></div>
+        <div class="padding eqtext">
+          <p>Jaipur is a standout amongst the most socially rich legacy urban areas in India. Established in the year 1727, the city is named after Maharaja Jai Singh II who was the primary organizer of this city.
+          </p></div>
+
+        </div>
+        <div class="col6 half padding floatleft"><img src="images/scooter.jpg" alt="scooter image" >
+          <!-- <div class="black"></div> -->
+          <div class="smallheading">Adventures of the Scooty, Goa</div>
+          <div class="date">14<span class="super">th</span> March 2018, <i>Panji</i></div>
+          <div class="eqtext">
+            <p>The list of the best places to visit during your trip to Goa on the rented scooters available for the tourists. The guide to enhance yor trip to famous beaches and the local parties.
+            </p></div>
+          </div>
+        </div>
+        <div class="col6 section full floatleft cf">
+          <div class="col6 half padding floatleft"><img src="images/forest.jpg" alt="forest image" >
+            <!-- <div class="black"></div> -->
+            <div class="smallheading">Beauty of Himachal's Diversity</div>
+            <div class="date">26<span class="super">th</span> March 2018, <i>Manali</i></div>
+            <div class="eqtext">
+              <p>Himachal Pradesh is one of the states that lies in the Indian Himalayan Region, one of the richest reservoirs of biological diversity in the world. Famous for it's simplicity...
+              </p></div>
+            </div>
+            <div class="col6 half padding floatleft"><img src="images/boat2.jpg" alt="boat image" >
+              <!-- <div class="black"></div> -->
+              <div class="smallheading">The Legends of Ladakh</div>
+              <div class="date">17<span class="super">th</span> March 2018, <i>Jammu & Kashmir</i></div>
+              <div class="eqtext">
+                <p>Ladakh ("land of high passes") is a region in the Indian state of Jammu and Kashmir that currently extends from the Kunlun mountain range to the main Great Himalayas...
+                </p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- **********************FOOTER*************************** -->
+    <footer class="cf section2 floatleft">
+      <div class="wrapper">
+
+
+      <ul class="menunav padding2 cf">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="story.html">TRAVEL</a></li>
+        <li><a href="#">HERITAGE</a></li>
+        <li><a href="#">FOOD</a></li>
+        <li><a href="#">CULTURE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <div class="follow padding cf">
+        Follow Us
+        <div>
+          <span class="icons"><i class="fab fa-facebook-square"></i></span>
+          <span class="icons"><i class="fab fa-twitter"></i></span>
+          <span class="icons"><i class="fab fa-instagram"></i></span>
+        </div>
+      </div>
+      <div class="mailus padding cf">
+        <div class="mailtext">Mail Us Your Stories</div>
+        <div>7159 Kinght St</div>
+        <div>Vancouver, BC</div>
+        <div>Postal Code: V5P2W9</div>
+      </div>
+      <div class="copyright padding cf">
+        © ALL RIGHTS RESERVED, NAMASTE INDIA INC
+      </div>
+        </div>
+    </footer>
+</body>
+</html>

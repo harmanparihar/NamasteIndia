@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=s, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <title>Namaste India</title>
+  <!-- Dropdown menu Source: w3schools.com -->
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+  function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+          } else {
+              a[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+</head>
+
+<body class="cf">
+  <!--  ***********************HEADER**************************-->
+  <header class="cf">
+    <nav class="cf">
+      <ul class="cf">
+
+        <li class="menu_icon"><div class="dropdown"><button onclick="myFunction()" class="dropbutton"><i class="fas fa-bars"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+        <a href="story.html">Travel</a>
+        <a href="#">Heritage</a>
+        <a href="#">Food</a>
+        <a href="404.html">Culture</a>
+        <a href="contact.html">Contact</a>
+      </div></div></li>
+        <li class="logomenu"><a href="#"><img class="logo" src="images/logo2small.png" alt="logo image"></a></li>
+        <li class="menu"><a href="index.html">HOME</a></li>
+        <li class="menu"><a href="story.html">TRAVEL</a></li>
+        <li class="menu"><a href="#">HERITAGE</a></li>
+        <li class="menu"><a href="#">FOOD</a></li>
+        <li class="menu"><a href="#">CULTURE</a></li>
+        <li class="menu"><a href="contact.html">CONTACT</a></li>
+        <li class="menu"><form id="searching">
+          <!-- /* //source w3schools.com */ -->
+	        <input type="search">
+          </form>
+        </li>
+        <li class="search_icon"><a href=""><i class="fas fa-search"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class=" col12 floatleft bg-image cf">
+    <div class="cf highlight headline">
+      <h1>The Himalayas</h1>
+      <div>
+        <i>The mountain range that contains Earth's highest peaks including Mount Everest.</i>
+        <div class="small">28th January 2018, by <span class="yellow">VIDYA BANERJEE</span> </div>
+      </div>
+      <button onclick="location.href = 'story.html';" class="read" type="submit" name="Read more" value="Home">READ MORE</button>
+    </div>
+  </div>
+  <div class="wrapper cf">
+    <!-- *************first section *************************** -->
+    <div class="col12 floatleft section cf">
+      <h2><span>Popular Reads</span></h2>
+      <div class="col12 padding cf">
+        <div class="col4  section padding floatleft"><img src="images/himalayas.jpg" alt="himalayan mountains image" >
+          <div class="eqtext"> <div class="smallheading">Leh Ladakh, Kashmir </div>
+          <div class="date">15<span class="super">th</span> March 2018, <i>Jammu & Kashmir</i> </div>
+          <p>Rock carvings found in many parts of Ladakh indicate that the area has been inhabited from Neolithic times.Ladakh is renowned for its remote mountain beauty and culture.</p>
+        </div>
+      </div>
+      <div class="col4  section padding floatleft"><img src="images/goa.jpg" alt="beach image" >
+        <div class="eqtext"><div class="smallheading">Calangute Beach, Panji</div>
+        <div class="date">26<span class="super">th</span> March 2018, <i>Goa</i></div>
+        <p>One of the most crowded yet beautiful beaches of India, famous for the wide range of water sports, amazing food and restaurants and the thifting nightlife. </p></div>
+      </div>
+      <div class="col4 section padding floatleft"><img src="images/nature.jpg" alt="forest image" >
+        <div class="eqtext"><div class="smallheading">Shivalik Hills,Shimla</div>
+        <div class="date">20<span class="super">th</span> March 2018, <i>Himachal Pradesh</i></div>
+        <p>Himachal Pradesh is one of the states that lies in the Indian Himalayan Region (IHR), one of the richest reservoirs of biological diversity in the world.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ************* second section *************************** -->
+<div class="col12 section floatleft cf">
+  <h2> <span>Travel & Culture</span></h2>
+  <div class="col12 floatleft  cf">
+    <div class="col12  floatleft  padding cf">
+      <div class="col6 marginbottom full floatleft padding">
+        <img src="images/temple2.jpg" alt="cab picture">
+        <div class="col12 floatleft">
+          <h3>When Spirituality meets Art, Khajurao Temple</h3>
+          <div class="date">15<span class="super">th</span> March 2018, <i>Madhya Pradesh</i></div>
+          <p>The Khajuraho Group of Monuments is a group of Hindu and Jain temples in Madhya Pradesh, India, about 175 kilometres (109 mi) southeast of Jhansi. They are one of the UNESCO World Heritage Sites in India. The temples are famous for their nagara-style architectural symbolism and their erotic sculptures.</p>
+        </div>
+      </div>
+      <div class="col6 full floatleft padding cf">
+        <div class="col6 marginbottom half floatleft padding">
+          <img src="images/jaipuri.jpg" alt="man sitting in ajmer fort">
+          <div class="col12 floatleft">
+            <div class="smallheading">The untold stories of Ajmer Fort</div>
+            <div class="date">22<span class="super">nd</span> March 2018, <i>Amer</i></div>
+            <p class="eqtext">Constructed of red sandstone and marble, the attractive, opulent palace is laid out on four levels, each with a courtyard.</p>
+          </div>
+        </div>
+        <div class="col6 marginbottom half padding  floatleft ">
+          <img src="images/pune.jpg" alt="waterfall image" >
+          <div class="col12  floatleft">
+            <div class="smallheading">The waterfalls of Khandala</div>
+            <div class="date">25<span class="super">th</span> March 2018, <i>Maharashtra</i></div>
+            <p class="eqtext">Khandala is located at one end the Bhor Ghat, a major ghat on the road link between the Deccan Plateau and the Konkan plain.  </p>
+          </div>
+        </div>
+        <div class="col12 floatleft cf">
+        <div class="col6 half floatleft padding">
+          <img src="images/uncles.jpg" alt="three men sitting picture">
+          <div class="col12 floatleft">
+            <div class="smallheading">The lifestyle of a <i>SADHU</i></div>
+            <div class="date">12<span class="super">th</span> March 2018, <i>Bihar</i></div>
+            <p class="eqtext">  Bihar is an Indian state considered to be a part of Eastern as well as Northern India.</p>
+          </div>
+        </div>
+        <div class="col6  half floatleft padding">
+          <img src="images/cab.jpg" alt="cab picture" >
+          <div class="col12 center floatleft  ">
+            <div class="smallheading">How to explore <i>Amchi Mumbai</i> </div>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+            <p class="eqtext">Mumbai also known as Bombay, is the capital city of the Indian state of Maharashtra. <p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col12 margintop floatleft cf ">
+      <div class="col12 floatleft padding  cf">
+        <div class="col6 full floatleft marginbottom padding">
+          <img src="images/houseboat.jpg" alt="houseboat picture">
+          <div class="col12 floatleft">
+            <h3>The Incredible Journey of the Allepey Houseboat</h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Kerela</i></div>
+            <p>Kerala, called Keralam in Malayalam (where Kerala is the adjectival form), is a state in South India on the Malabar Coast.</p>
+          </div>
+        </div>
+
+
+        <div class="col6 full floatleft padding">
+          <img src="images/dance.jpg" alt="fashion show picture" >
+          <div class="col12 floatleft ">
+            <h3>Learn Kuchipudi: an ancient dance form from south India </h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+            <p> Kuchipudi is one of the eight major Indian classical dances. It originated in a village named Kuchipudi in the Indian state of Andhra Pradesh.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ************* third section *************************** -->
+<div class="cf floatleft col12 ">
+  <h2><span>Wildlife</span></h2>
+  <div class="col12 floatleft padding cf">
+    <div class="col6 full floatleft padding cf">
+      <div class="col6 padding marginbottom floatleft padding">
+        <img src="images/monkeys.jpg" alt="monkey picture">
+        <div class="col12 floatleft">
+          <h3>When Monkeys are worshipped, North India</h3>
+          <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+        </div>
+      </div>
+      <div class="col6 marginbottom floatleft padding">
+        <img src="images/tiger.jpg" alt="tiger image" >
+        <div class="col12 floatleft ">
+          <h3>When Tigers rule, Jim Corbett National Park </h3>
+          <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+        </div>
+      </div>
+      <div class="col12 floatleft">
+        <div class="col6 marginbottom floatleft padding">
+          <img src="images/south.jpg" alt="lake picture">
+          <div class="col12 floatleft ">
+            <h3>The secret lakes of Western Ghats</h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+          </div>
+        </div>
+        <div class="col6 marginbottom floatleft padding">
+          <img src="images/eagle.jpg" alt="eagle image" >
+          <div class="col12  floatleft ">
+            <h3>The Parsi Tradition which feeds Eagles</h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col6 full floatleft padding">
+      <img src="images/forest.jpg" alt="forest picture">
+      <div class="col12 floatleft ">
+        <h3>The Sacredness of Manali</h3>
+        <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+        <p>Manali is a valley nestled in the mountains of the Indian state of Himachal Pradesh near the northern end of the Kullu Valley, at an altitude of 2,050 m in the Beas River Valley. Manali has grown from a trading outpost/ village to a small town; as of the 2011 census of India, its population was 8,096. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ************* fourth section *************************** -->
+<div class="section col12 floatleft cf">
+  <h2><span>Hotels & Restaurants</span></h2>
+  <div class="col12 floatleft  cf">
+    <div class="col12 floatleft  padding cf">
+      <div class="col6 marginbottom full floatleft padding">
+        <img src="images/hotel1.jpg" alt="hotel picture">
+        <div class="col12   floatleft">
+          <h3>Live like a King, Best Indian Resorts to book for your next trip</h3>
+          <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+            <p>Lake Palace (formerly known as Jag Niwas) is a luxury hotel, which has 83 rooms and suites featuring white marble walls. The Lake Palace is located on the island of Jag Niwas in Lake Pichola, Udaipur, India, and its natural foundation spans 4 acres (16,000 m2). The hotel operates a speed boat which transports guests to the hotel from a jetty at the City Palace.</p>
+        </div>
+      </div>
+      <div class="col6 full floatleft padding cf">
+        <div class="col6  marginbottom floatleft padding">
+          <img src="images/restraunt.jpg" alt="restaurant picture">
+          <div class="col12   floatleft ">
+            <h3>List of India's best Dine-In Restaurants</h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+          </div>
+        </div>
+        <div class="col6 padding marginbottom floatleft ">
+          <img src="images/buffet.jpg" alt="buffet image" >
+          <div class="col12 floatleft ">
+            <h3>Butter Chicken with Butter Naan</h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+          </div>
+        </div>
+        <div class="floatleft full col12">
+          <div class="col6 marginbottom floatleft padding">
+            <img src="images/brkfst.jpg" alt="breakfast picture">
+            <div class="col12   floatleft ">
+              <h3>Eat breakfast like an Italian in India</h3>
+              <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+            </div>
+          </div>
+          <div class="col6 marginbottom floatleft padding">
+            <img src="images/coffee.jpg" alt="coffee image" >
+            <div class="col12 floatleft ">
+              <h3>The best coffee brew to find in India</h3>
+              <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col12 margintop floatleft cf ">
+      <div class="col12 floatleft padding  cf">
+        <div class="col6 marginbottom full floatleft padding">
+          <img src="images/bar2.jpg" alt="bar image" >
+          <div class="col12   floatleft ">
+            <h3>How Park Hotel made Indian Pale Ale the King of Craft Beers</h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+            <p>India pale ale (IPA) is a hoppy beer style within the broader category of pale ale. It has also been referred to as pale ale as prepared for India, India ale, pale India ale, or pale export India ale. The term pale ale originally denoted an ale that had been brewed from pale malt. Among the first brewers known to export beer to India was George Hodgson's Bow Brewery, on the Middlesex-Essex border. </p>
+          </div>
+        </div>
+        <div class="col6 full floatleft padding">
+          <img src="images/bar.jpg" alt="bar picture">
+          <div class="col12   floatleft ">
+            <h3>Top 10 Microbrewries in India</h3>
+            <div class="date">5<span class="super">th</span> March 2018, <i>Mumbai</i></div>
+            <p>Beer is one of the oldest and most widely consumed alcoholic drinks in the world, and the third most popular drink overall after water and tea. A microbrewery or craft brewery is a brewery that produces small amounts of beer (or sometimes root beer), typically much smaller than large-scale corporate breweries, and is independently owned. Such breweries are generally characterized by their emphasis on quality, flavour and brewing technique.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************* fifth section *************************** -->
+  <div class="col12 section floatleft cf">
+    <h2><span>Quick Links</span></h2>
+    <div class=" marginbottom col12 padding cf">
+      <div class="col6 section full floatleft cf">
+        <div class="col6 half padding  floatleft"><img src="images/sand.jpg" alt="desert image" >
+          <div class="smallheading">Thar Desert, Rajasthan</div>
+          <div class="date">10<span class="super">th</span> March 2018, <i>Jaisalmer</i></div>
+          <div class="padding eqtext">
+            <p>Jaipur is a standout amongst the most socially rich legacy urban areas in India. Established in the year 1727, the city is named after Maharaja Jai Singh II who was the primary organizer of this city.
+            </p></div>
+
+          </div>
+          <div class="col6 half padding floatleft"><img src="images/scooter.jpg" alt="scooter image" >
+            <!-- <div class="black"></div> -->
+            <div class="smallheading">Adventures of the Scooty, Goa</div>
+            <div class="date">14<span class="super">th</span> March 2018, <i>Panji</i></div>
+            <div class="eqtext">
+              <p>The list of the best places to visit during your trip to Goa on the rented scooters available for the tourists. The guide to enhance yor trip to famous beaches and the local parties.
+              </p></div>
+            </div>
+          </div>
+          <div class="col6 section full floatleft cf">
+            <div class="col6 half padding floatleft"><img src="images/forest.jpg" alt="forest image" >
+              <!-- <div class="black"></div> -->
+              <div class="smallheading">Beauty of Himachal's Diversity</div>
+              <div class="date">26<span class="super">th</span> March 2018, <i>Manali</i></div>
+              <div class="eqtext">
+                <p>Himachal Pradesh is one of the states that lies in the Indian Himalayan Region, one of the richest reservoirs of biological diversity in the world. Famous for it's simplicity...
+                </p></div>
+              </div>
+              <div class="col6 half padding floatleft"><img src="images/boat2.jpg" alt="boat image" >
+                <!-- <div class="black"></div> -->
+                <div class="smallheading">The Legends of Ladakh</div>
+                <div class="date">17<span class="super">th</span> March 2018, <i>Jammu & Kashmir</i></div>
+                <div class="eqtext">
+                  <p>Ladakh ("land of high passes") is a region in the Indian state of Jammu and Kashmir that currently extends from the Kunlun mountain range to the main Great Himalayas...
+                  </p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- **********************FOOTER*************************** -->
+      <footer class="cf section2 floatleft">
+        <div class="wrapper">
+
+
+        <ul class="menunav padding2 cf">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="story.html">TRAVEL</a></li>
+          <li><a href="#">HERITAGE</a></li>
+          <li><a href="#">FOOD</a></li>
+          <li><a href="#">CULTURE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="follow padding cf">
+          Follow Us
+          <div>
+            <span class="icons"><i class="fab fa-facebook-square"></i></span>
+            <span class="icons"><i class="fab fa-twitter"></i></span>
+            <span class="icons"><i class="fab fa-instagram"></i></span>
+          </div>
+        </div>
+        <div class="mailus padding cf">
+          <div class="mailtext">Mail Us Your Stories</div>
+          <div>7159 Kinght St</div>
+          <div>Vancouver, BC</div>
+          <div>Postal Code: V5P2W9</div>
+        </div>
+        <div class="copyright padding cf">
+          © ALL RIGHTS RESERVED, NAMASTE INDIA INC
+        </div>
+          </div>
+      </footer>
+  </body>
+</html>
